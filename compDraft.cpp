@@ -50,11 +50,14 @@ int main(){
     }
     cout << endl;
     vector<string> factions{};
+    vector<string> vanillaFactions ={"Arborec", "Barony of Letnev", "Clan of Saar", "Embers of Muaat", "Emirates of Hacan", "Federation of Sol", "Ghost of Creuss", "L1Z1X Mindnet" ,"Mentak Coalition", "Naalu Collective", "Nekro Virus", "Sardakk N'orr", "Universities of Jol-Nar", "Winnu", "Xxcha Kingdom", "Yin Brotherhood", "Yssaril Tribes"};
+    vector<string> expFactions = {"Argent Flight", "Empyrean", "Mahact Gene-Sorcerers", "Naaz-Rokha Alliance", "Nomad", "Titans of UI", "Vuil'Raith Cabal", "Keleres"};
+    
     if (exp){
-        factions = {"Arborec", "Barony of Letnev", "Clan of Saar", "Embers of Muaat", "Emirates of Hacan", "Federation of Sol", "Ghost of Creuss", "L1Z1X Mindnet" ,"Mentak Coalition", "Naalu Collective", "Nekro Virus", "Sardakk N'orr", "Universities of Jol-Nar", "Winnu", "Xxcha Kingdom", "Yin Brotherhood", "Yssaril Tribes", "Argent Flight", "Empyrean", "Mahact Gene-Sorcerers", "Naaz-Rokha Alliance", "Nomad", "Titans of UI", "Vuil'Raith Cabal", "Keleres"};
+        set_union(vanillaFactions.begin(), vanillaFactions.end(), expFactions.begin(), expFactions.end(), back_inserter(factions));
     }
     else {
-        factions ={"Arborec", "Barony of Letnev", "Clan of Saar", "Embers of Muaat", "Emirates of Hacan", "Federation of Sol", "Ghost of Creuss", "L1Z1X Mindnet" ,"Mentak Coalition", "Naalu Collective", "Nekro Virus", "Sardakk N'orr", "Universities of Jol-Nar", "Winnu", "Xxcha Kingdom", "Yin Brotherhood", "Yssaril Tribes"};
+        factions = vanillaFactions;
     }
     random_device rd2;
     mt19937 g2(rd2());
