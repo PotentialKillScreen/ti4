@@ -35,7 +35,7 @@ void FactionsIntoGroups(vector<string> factions, int nGroups){
 
 int main(){
     bool exp = true;
-    vector<string> names{"Axel A", "Axel W", "Oskar S", "Linus", "August"};
+    vector<string> names{"Axel A", "Axel W", "Oskar S", "Jesper", "August", "Oskar B"};
     random_device rd;
     mt19937 g(rd());
     shuffle(names.begin(),names.end(),g);
