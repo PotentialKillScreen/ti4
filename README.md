@@ -29,3 +29,7 @@ If two connected wormholes are adjacent, switch the lone wormhole with an empty 
 A “slice” is defined as the 5 tiles that start around your homeplanet. This includes the four tiles that are closer to your home system than any other home system. As well as the tile that is both 2 steps from your home system and two tiles from the player to your left’s home system.
 
 Always choose higher numbered tiles or slices when choosing, prioritising or ordering.
+
+![alt text](https://github.com/PotentialKillScreen/ti4/blob/main/Example%20of%20Competitive%20draft.png)
+
+
