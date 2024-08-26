@@ -1,12 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Global variables
+bool expansion = true;
+
+vector<string> names{"Axel A", "Axel W", "Oskar S", "Niklas", "August", "Oskar B"};
+
+
+
 void FactionsIntoGroups(vector<string> factions, int nGroups, ofstream& myfile){
     int nFactions = factions.size();
     int smallGroup = nFactions/nGroups;
     int nBigGroups = nFactions % nGroups;
-    //ofstream myfile;
-    //myfile.open("output.csv");
     int i = 1; 
     for (;i<nBigGroups + 1; i++){
         cout << "Group " << i << ": ";
@@ -41,8 +46,7 @@ void FactionsIntoGroups(vector<string> factions, int nGroups, ofstream& myfile){
 
 
 int main(){
-    bool exp = true;
-    vector<string> names{"Axel A", "Axel W", "Oskar S", "Jesper", "August", "Oskar B"};
+    
     random_device rd;
     mt19937 g(rd());
     shuffle(names.begin(),names.end(),g);
@@ -64,10 +68,11 @@ int main(){
     myfile << "\n";
     cout << endl;
     vector<string> factions{};
+
     vector<string> vanillaFactions ={"Arborec", "Barony of Letnev", "Clan of Saar", "Embers of Muaat", "Emirates of Hacan", "Federation of Sol", "Ghost of Creuss", "L1Z1X Mindnet" ,"Mentak Coalition", "Naalu Collective", "Nekro Virus", "Sardakk N'orr", "Universities of Jol-Nar", "Winnu", "Xxcha Kingdom", "Yin Brotherhood", "Yssaril Tribes"};
+
     vector<string> expFactions = {"Argent Flight", "Empyrean", "Mahact Gene-Sorcerers", "Naaz-Rokha Alliance", "Nomad", "Titans of UI", "Vuil'Raith Cabal", "Keleres"};
-    
-    if (exp){
+    if (expansion){
         set_union(vanillaFactions.begin(), vanillaFactions.end(), expFactions.begin(), expFactions.end(), back_inserter(factions));
     }
     else {
