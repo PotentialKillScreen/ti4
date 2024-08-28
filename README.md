@@ -2,7 +2,7 @@ Resources used for the draft before playing the board game Twillight Imperium 4t
 
 Includes the script compDraft.cpp which is used to randomize order in draft and to distribute the factions into group.
 Before using compDraft the names of the players should be changed to who is going to be playing.
-The script outputs a csv file such that the output can be copy pasted to the spreadsheet.
+The script outputs a CSV file such that the output can be copy pasted to the spreadsheet.
 
 The project also includes the spreadsheet Competitive Draft which is used during the the draft. The results from compDraft are used to initialize the spreadsheet.
 Also an image from keeganw.github.io/ti4 is edited with borders and numbers to define the slices. 
