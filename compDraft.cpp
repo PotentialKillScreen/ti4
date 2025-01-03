@@ -4,7 +4,7 @@ using namespace std;
 //Global variables
 bool expansion = true;
 
-vector<string> names{"Axel A", "Axel W", "Oskar S", "Niklas", "August", "Oskar B"};
+vector<string> names{"Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6"};
 
 
 
